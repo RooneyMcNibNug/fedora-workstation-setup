@@ -24,3 +24,6 @@ wget https://raw.githubusercontent.com/RooneyMcNibNug/dotfiles/main/.bash_aliase
 ~/.bash_aliases
 mv .bash_aliases ~/.bash_aliases
 source ~/.bash_aliases
+
+# OPTIONAL: Install NVIDIA drivers
+# sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
