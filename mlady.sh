@@ -36,8 +36,8 @@ source ~/.bash_aliases
 mkdir /home/"$user"/.config/audacious && \cp audacious/config /home/"$user"/.config/audacious/config
 mkdir /home/"$user"/.config/mpv && \cp mpv/mpv.conf /home/"$user"/.config/mpv/mpv.conf
 \cp mpv/input.conf /home/"$user"/.config/mpv/input.conf
-mkdir /home/"$user"/.vscode/ && \cp .vscode/argv.json /home/"$user"/.vscode/argv.json
-mkdir /home/"$user"/.var/app/org.duckstation.DuckStation/config/duckstation/ && \cp duckstation/settings.ini /home/"$user"/.var/app/org.duckstation.DuckStation/config/duckstation/settings.ini
+mkdir /home/"$user"/.vscode && \cp .vscode/argv.json /home/"$user"/.vscode/argv.json
+mkdir /home/"$user"/.var/app/org.duckstation.DuckStation/config/duckstation && \cp duckstation/settings.ini /home/"$user"/.var/app/org.duckstation.DuckStation/config/duckstation/settings.ini
 
 # OPTIONAL: Install NVIDIA drivers
 # sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
