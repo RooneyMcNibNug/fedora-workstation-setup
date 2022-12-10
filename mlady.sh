@@ -10,9 +10,9 @@ $user = 'username' # put your username here!
 
 # package installs, rust install, git clones
 cd Documents
-git clone https://github.com/RooneyMcNibNug/linux-scripts
+git clone https://github.com/RooneyMcNibNug/linux-scripts 
 cd linux-scripts
-chmod +x dnf_installer.sh
+chmod +x dnf_installer.sh # https://github.com/RooneyMcNibNug/linux-scripts/blob/master/dnf_installer.sh
 ./dnf_installer.sh || exit
 
 # setup cpm for perl and download some useful modules
