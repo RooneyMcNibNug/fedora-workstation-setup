@@ -9,7 +9,7 @@
 $user = 'user' # put your username here!
 
 # package installs, rust install, git clones
-cd /home/$user/Documents
+cd /home/"$user"/Documents
 git clone https://github.com/RooneyMcNibNug/linux-scripts 
 cd linux-scripts
 chmod +x dnf_installer.sh # https://github.com/RooneyMcNibNug/linux-scripts/blob/master/dnf_installer.sh
