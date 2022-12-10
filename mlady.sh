@@ -34,10 +34,14 @@ source ~/.bash_aliases
 # populate app dotfiles
 # the '\' in `\cp` forces overwrite of existing files with the same name
 mkdir /home/"$user"/.config/audacious && \cp audacious/config /home/"$user"/.config/audacious/config
+chown -R $user /home/"$user"/.config/audacious
 mkdir /home/"$user"/.config/mpv && \cp mpv/mpv.conf /home/"$user"/.config/mpv/mpv.conf
+chown -R $user /home/"$user"/.config/mpv
 \cp mpv/input.conf /home/"$user"/.config/mpv/input.conf
 mkdir /home/"$user"/.vscode && \cp .vscode/argv.json /home/"$user"/.vscode/argv.json
+chown -R $user /home/"$user"/.vscode
 mkdir /home/"$user"/.var/app/org.duckstation.DuckStation/config/duckstation && \cp duckstation/settings.ini /home/"$user"/.var/app/org.duckstation.DuckStation/config/duckstation/settings.ini
+chown -R $user /home/"$user"/.var/app/org.duckstation.DuckStation/config/duckstation
 
 # OPTIONAL: Install NVIDIA drivers
 # sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
