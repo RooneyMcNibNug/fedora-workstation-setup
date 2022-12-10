@@ -6,6 +6,8 @@
 # TODO: create an if then to capture if the OS is using gnome or not
 # maybe with > systemctl | grep qDisplay Managerq or > echo $DESKTOP_SESSION
 
+$user = 'username' # put your username here!
+
 # package installs, rust install, git clones
 cd Documents
 git clone https://github.com/RooneyMcNibNug/linux-scripts
@@ -29,11 +31,11 @@ source ~/.bash_aliases
 
 # populate app dotfiles
 # the '\' in `\cp` forces overwrite of existing files with the same name
-\cp audacious/config ~/.config/audacious/config
-\cp mpv/mpv.conf ~/.config/mpv/mpv.conf
-\cp mpv/input.conf ~/.config/mpv/input.conf
-\cp .vscode/argv.json ~/.vscode/argv.json
-\cp duckstation/settings.ini ~/.var/app/org.duckstation.DuckStation/config/duckstation/settings.ini
+\cp audacious/config /home/$user/.config/audacious/config
+\cp mpv/mpv.conf /home/$user/.config/mpv/mpv.conf
+\cp mpv/input.conf /home/$user/.config/mpv/input.conf
+\cp .vscode/argv.json /home/$user/.vscode/argv.json
+\cp duckstation/settings.ini /home/$user/.var/app/org.duckstation.DuckStation/config/duckstation/settings.ini
 
 # OPTIONAL: Install NVIDIA drivers
 # sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
