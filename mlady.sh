@@ -19,12 +19,14 @@ chmod +x dnf_installer.sh # https://github.com/RooneyMcNibNug/linux-scripts/blob
 # for now, just clone my repo - but un-comment to change this
 cd ..
 git clone https://github.com/RooneyMcNibNug/perl-admin
+chown -R $user perl-admin
 #cd  perl-admin
 #chmod +x perl_setup.sh
 #./perl_setup.sh || exit
 
 # setup aliases
 git clone https://github.com/RooneyMcNibNug/dotfiles
+chown -R $user dotfiles
 cd dotfiles
 mv .bash_aliases ~/.bash_aliases
 source ~/.bash_aliases
