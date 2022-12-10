@@ -6,7 +6,7 @@
 # TODO: create an if then to capture if the OS is using gnome or not
 # maybe with > systemctl | grep qDisplay Managerq or > echo $DESKTOP_SESSION
 
-$user = 'user' # put your username here!
+user = 'user' # put your username here!
 
 # package installs, rust install, git clones
 cd /home/"$user"/Documents
