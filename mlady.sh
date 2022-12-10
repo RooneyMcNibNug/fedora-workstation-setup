@@ -25,5 +25,15 @@ wget https://raw.githubusercontent.com/RooneyMcNibNug/dotfiles/main/.bash_aliase
 mv .bash_aliases ~/.bash_aliases
 source ~/.bash_aliases
 
+# populate app dotfiles
+# the '\' in `\cp` forces overwrite of existing files with the same name
+git clone https://github.com/RooneyMcNibNug/dotfiles
+cd dotfiles
+\cp audacious/config ~/.config/audacious/config
+\cp mpv/mpv.conf ~/.config/mpv/mpv.conf
+\cp mpv/input.conf ~/.config/mpv/input.conf
+\cp .vscode/argv.json ~/.vscode/argv.json
+\cp duckstation/settings.ini ~/.var/app/org.duckstation.DuckStation/config/duckstation/settings.ini
+
 # OPTIONAL: Install NVIDIA drivers
 # sudo dnf install akmod-nvidia xorg-x11-drv-nvidia-cuda -y
