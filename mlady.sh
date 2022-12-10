@@ -6,10 +6,10 @@
 # TODO: create an if then to capture if the OS is using gnome or not
 # maybe with > systemctl | grep qDisplay Managerq or > echo $DESKTOP_SESSION
 
-$user = 'username' # put your username here!
+$user = 'user' # put your username here!
 
 # package installs, rust install, git clones
-cd Documents
+cd /home/$user/Documents
 git clone https://github.com/RooneyMcNibNug/linux-scripts 
 cd linux-scripts
 chmod +x dnf_installer.sh # https://github.com/RooneyMcNibNug/linux-scripts/blob/master/dnf_installer.sh
