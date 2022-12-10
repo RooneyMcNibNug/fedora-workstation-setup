@@ -14,14 +14,14 @@ chmod +x dnf_installer.sh
 ./dnf_installer.sh || exit
 
 # setup cpm for perl and download some useful modules
+# for now, just clone my repo - but un-comment to change this
 cd ..
 git clone https://github.com/RooneyMcNibNug/perl-admin
-cd  perl-admin
-chmod +x perl_setup.sh
-./perl_setup.sh || exit
+#cd  perl-admin
+#chmod +x perl_setup.sh
+#./perl_setup.sh || exit
 
 # setup aliases
-cd ..
 git clone https://github.com/RooneyMcNibNug/dotfiles
 cd dotfiles
 mv .bash_aliases ~/.bash_aliases
